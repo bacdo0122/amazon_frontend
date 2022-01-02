@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { combineReducers } from "redux";
 import { Products } from "./product";
 import { Sum } from "./Sum";

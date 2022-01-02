@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";

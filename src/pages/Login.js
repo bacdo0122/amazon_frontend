@@ -1,7 +1,9 @@
+/* eslint-disable */
 import React from "react";
 import "../css/login.css";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import axios from "../apiConfig";
+
 export default function Login() {
   const history = useNavigate();
   const showPass = () => {
@@ -20,10 +22,10 @@ export default function Login() {
             e.preventDefault();
             const username = document.querySelector("#username").value;
             const password = document.querySelector("#password").value;
-
             const res = await axios.get(
-              `http://localhost:5000/user?username=${username}&password=${password}`
+              `user?username=${username}&password=${password}`
             );
+
             if (res.data.message) {
               document.querySelector(".message").innerHTML = res.data.message;
             } else {

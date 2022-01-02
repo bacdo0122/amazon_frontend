@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const Add = (data) => {
   return {
     type: "Add",

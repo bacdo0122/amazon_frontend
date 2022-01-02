@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
 import CartItem from "../components/CartItem";
 import Navbar from "../components/Navbar";

@@ -1,3 +1,4 @@
+/* eslint-disable */
 const initialState = {
   sum: 0,
   number: 0,

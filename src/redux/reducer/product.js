@@ -1,3 +1,4 @@
+/* eslint-disable */
 const initialState = {
   total: 0,
   products: null,

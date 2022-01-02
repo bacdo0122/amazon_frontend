@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import CommentSection from "./CommentSection";
 import ReviewStar from "./ReviewStar";

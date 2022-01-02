@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import "../css/ProductDetails.css";
 import { useDispatch } from "react-redux";

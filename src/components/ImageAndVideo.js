@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useState } from "react";
 
 export default function ImageAndVideo({ item, info, setAppear, setInfo }) {

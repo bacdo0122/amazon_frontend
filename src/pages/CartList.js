@@ -6,6 +6,7 @@ import SectionControl from "../components/SectionControl";
 import SectionUser from "../components/SectionUser";
 import { useDispatch } from "react-redux";
 import { Add } from "../redux/action";
+/* eslint-disable */
 import { deleteButton } from "../components/ButtonControl";
 import { useNavigate } from "react-router-dom";
 export default function CartList() {

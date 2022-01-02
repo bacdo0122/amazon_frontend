@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from "react";
 import { api } from "../api";
 import { Link } from "react-router-dom";
