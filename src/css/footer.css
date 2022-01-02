@@ -1,0 +1,119 @@
+footer{
+    padding: 40px 0 0 0 ;
+    background-color: #232F3E;
+    color: #fff;
+}
+.footer-container{
+    padding: 0 0  30px 0;
+    border-bottom: 1px solid #3a4553;
+}
+.footer-info{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list-container span{
+    font-size: 18px;
+}
+.footer-list-container ul li{
+    margin: 10px 0;
+}
+.footer-list-container ul li a{
+    color: #ccc;
+}
+.footer-list-container ul li a:hover{
+    text-decoration: underline;
+}
+.footer-location{
+    height: 80px;
+    font-size: 14px;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
+}
+.location{
+    display: flex;
+    margin-left: 40px;
+    height: 50px;
+}
+.location-img{
+    width: 15px;
+    height: 15px;
+    background-image: url("https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.location-lang-icon{
+    background-position: -77px -24px;
+}
+.location-up-down{
+    background-position: -77px -80px;
+}
+.location-flag{
+    background-position: -54px -108px;
+}
+.location-border{
+    border: 1px solid #ccc;
+    height: 30px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin: 0 10px;
+}
+.location-border a{
+    display: flex;
+    color: #ccc;
+    justify-content: center;
+}
+.location-padding{
+    padding: 0 10px;
+}
+.footer-table{
+    padding: 40px 0 ;
+    background-color: #131A22;
+}
+.footer-wrapper{
+    display: flex;
+    flex-flow: column ;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer-table-contaier{
+    margin-bottom: 20px;
+}
+.footer-table-title{
+    display: block;
+    font-size: 11px;
+    color: #DDD;
+    font-weight: 600;
+}
+.footer-table-link{
+    color: #999;
+}
+.footer-table-link:hover{
+    text-decoration: underline;
+}
+.footer-table-list{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-table-item{
+    max-width: 80px;
+    width: 80px;
+    line-height: 13px;
+}
+.footer-bottom{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom a, .footer-bottom span{
+    padding: 10px;
+    font-size: 14px;
+    color: #ddd;
+}
+.footer-bottom a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,177 @@
+.body-main{
+    padding-top: 10px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 1000px;
+    width: calc(100vw - 44px + 12px);
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body-main .body-main-left{
+    position: relative;
+    overflow: hidden;
+}
+.body-main .main-left{
+    padding: 3px 15px;
+    border-right: 2px solid #ccc;
+}
+.body-main .body-main-left .main-left-list-department{
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 20px;
+    overflow: hidden;
+
+}
+.body-main .body-main-left .list-department-label{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.body-main .body-main-left .list-department{
+    margin-bottom: 20px;
+} 
+.body-main .body-main-left .list-department-item{
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.list-department-link{
+    color:#0F1111;
+ 
+}
+.list-department-link:hover{
+    color: #c7511f !important;
+    cursor: pointer;
+}
+.body-main .body-main-left .item-child{
+    margin-left: 10px;
+}
+.body-main .main-custom-review {
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 20px;
+    overflow: hidden;
+}
+.body-main .main-custom-review .star-img{
+    background-repeat: no-repeat;
+    background-image: url("https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png");
+    position: relative;
+    height: 22px;
+    width: 95px;
+    display: block;
+}
+.body-main .main-custom-review .star-icon-4{
+    background-position: -2px -84px;
+}
+.body-main .main-custom-review .star-icon-3{
+    background-position: -293px -180px;
+}
+.body-main .main-custom-review .star-icon-2{
+    background-position: -99px -132px;
+}
+.body-main .main-custom-review .star-icon-1{
+    background-position: -390px -228px;
+}
+.body-main .main-custom-review .review-label-up{
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.body-main .main-custom-review .brand-checkbox{
+    padding: 0 2px;
+}
+.body-main .main-custom-review .brand-checkbox input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+   
+}
+input[type='checkbox']:hover{
+    outline: 2px solid aqua;
+}
+
+.body-main .main-custom-review .brand-checkbox .brand-name{
+    margin-left: 7px;
+}
+.body-main .main-custom-review .Price-item{
+    line-height: 22px;
+}
+.price-wrapper{
+    position: relative;
+    height: 100%;
+    
+}
+#form-price{
+    margin-top: 5px;
+    margin-right: 15px;
+    padding-right: 15px;
+    
+}
+.Price-item{
+    justify-content: space-between;
+   
+}
+.price-value{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    text-align: center;
+    margin-left: 5px;
+    line-height: 32px;
+    height: 100%;
+}
+.price-input{
+    border-radius: 4px;
+    border: 1px solid #888C8C;
+    outline: none;
+    padding: 2px 14px;
+    width: 65px;
+    min-width: 65px;
+    height: 30px;
+    font-size: 14px;
+}
+.price-btn-submit{
+    display: block;
+    height: 30px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+#Submit{
+    height: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #D5D9D9;
+}
+.grid-color{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-gap: 5px;
+}
+.color-name{
+    height: 21px;
+    width: 24px;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/nav2/images/gui/clothingcolorsprite._CB437558320_.png");
+    background-repeat: no-repeat;
+
+}
+
+.color-18:hover{
+    background-position: -1700px -100px;
+}
+.btn-Delete{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 7px 0;
+    background-color: #c7511f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+

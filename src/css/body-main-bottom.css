@@ -1,0 +1,95 @@
+.body-main-bottom{
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+.bottom-label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.bottom-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: dense;
+    grid-column-gap:30px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.bottom-item-link{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+    color: black;
+}
+.bottom-item-icon{
+  margin-right: 20px;
+}
+.bottom-item-btn{
+    font-size: 14px;
+    line-height: 25px;
+}
+.bottom-grid-box{
+    grid-column: span 2;
+    border: 1px solid #ccc;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination-item{
+    margin: 0 5px;
+   
+}
+.pagination-item button{
+    width: 35px;
+    height: 35px;
+}
+.pagi-control{
+    width: 70px!important;
+}
+.border-none{
+    border: none;
+    outline: none;
+}
+.pagi-active button{
+    border-radius: 4px;
+    border: 1px solid #e77600;
+}
+.main-bottom-flex{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.signIn-btn{
+    cursor: pointer;
+    width: 230px;
+    height: 30px;
+    background-color: #FFCB47;
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: 700;
+    text-shadow: 0 1px 0 #ffe093;
+}
+.btn-top{
+    height: 90px;
+}
+.btn-back-top{
+    width: 100%;
+}
+.btn-back-top button:hover{
+    background-color: #485769;
+}
+.btn-back-top button{
+    width: 100%;
+    padding: 8px 0;
+    color: #fff;
+    background-color: #37475A;
+    cursor: pointer;
+}
+.justify-end{
+    justify-content: flex-end;
+}

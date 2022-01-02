@@ -1,0 +1,157 @@
+.Review_section{
+    padding: 20px 10px 0 10px;
+    margin: 0 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+}
+.stars_total{
+    width: 30%;
+}
+.comments-wrapper{
+    flex: 1;
+}
+.stars-rating{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.global_rating{
+    color: #565959;
+    font-size: 14px;
+    line-height: 20px;
+}
+.rating-wrapper{
+    color: #007185;
+    border: 1px solid #ccc;
+    height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 5px;
+    box-shadow: inset 0 0 0 1px #e3e6e6;
+    background-color: #F0F2F2;
+    width: 180px;
+    
+}
+.rating{
+    background-color: #FFA41C;
+    display: inline-block;
+    height: 100%;
+}
+.stars_total a:hover .rating-wrapper{
+    border-color: #FFA41C;
+}
+.comment-item{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name-image-user{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.name-image-user img{
+    width: 36px;
+    margin-right: 10px;
+}
+.context{
+    margin: 5px 0;
+}
+.likes{
+    margin-bottom: 10px;
+}
+.image-wrapper{
+    margin-bottom: 10px;
+}
+.image-wrapper img{
+    margin-right: 2px;
+    
+}
+.totals-star-global{
+    display: flex;
+    align-items: center;
+}
+.totals-global-rating{
+    line-height: 20px;
+    font-size: 18px;
+    margin-left: 10px;
+
+}
+.comment-item .like-svg{
+    cursor: pointer;
+    
+    margin-right: 5px;
+}
+.reponsive{
+    background-color: #f5f5f5;
+    margin: 10px 0;
+    padding: 0.875rem 0.75rem;
+    position: relative;
+}
+.image-wrapper{
+    position: relative;
+    display: flex;
+}
+.image-wrapper img { 
+    object-fit: cover;
+    width: 4.5rem;
+    height: 4.5rem; 
+    border: 2px solid transparent;
+}
+.image-wrapper video{
+    object-fit: cover;
+    width: 4.5rem;
+    height: 100%; 
+    border: 2px solid transparent;
+}
+.video-wrapper{
+    position: relative;
+    height: 4.5rem; 
+    
+}
+.image-wrapper .video-icon-time{
+    position: absolute;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0,0,0,.54);
+    color: #fff;
+}
+.time-video{
+    font-size: 14px;
+}
+.reponsive h3{
+    color: #8b572a;
+    font-size: .875rem;
+    text-transform: capitalize;
+}
+.reponsive div{
+    color: rgba(0,0,0,.87);
+    white-space: pre-wrap;
+    margin-top: 0.625rem;
+    word-break: break-word;
+    font-size: 15px;
+}
+.zoom{
+    transition: all 2s ease 0s;
+    width: 300px;
+    height: 500px;
+}
+.zoom img{
+    width: 100%;
+    height: 100%;
+    max-width: 32.25rem;
+    max-height: 31.25rem;
+}
+.zoom video{
+    
+    width: 140%;
+    height: 100%;
+    background-color: black;
+    max-width: 32.25rem;
+    max-height: 31.25rem;
+}

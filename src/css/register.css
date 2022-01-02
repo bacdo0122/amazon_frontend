@@ -1,0 +1,74 @@
+
+  .app {
+    margin: 0 auto;
+    max-width: 725px;
+    background-image: url(https://ordinaryfaith.net/wp-content/uploads/2016/03/Gray-plain-website-background.jpg);
+    height: 100vh;
+  }
+  .container_register {
+    height: 100%;
+    background-color: #48c9b0;
+    padding: 40px 65px;
+  }
+  .row-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .col-form {
+    margin: 10px 0;
+    width: calc((100% - 30px) / 2);
+  }
+  .col-form .label-col {
+    margin-bottom: 5px;
+  }
+  .input-col {
+    display: flex;
+    margin-top: 10px;
+    height: 42px;
+  }
+  .radio-input {
+    display: flex;
+    align-items: center;
+  }
+  .input-col input[type="radio"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+  }
+  .mr {
+    margin-right: 20px;
+  }
+  .input-col input[type="text"],
+  .input-col input[type="email"],
+  .input-col input[type="password"],
+  .input-col input[type="date"] {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 40px;
+    box-shadow: inset 0px 1px 3px 0px rgb(0 0 0 / 8%);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: #fff;
+  }
+  
+  .submit-form input {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    outline: 0;
+    background: #17a589;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    margin: 0px 0px 8px;
+    padding: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .input-error {
+    min-height: 18px;
+  }
+  

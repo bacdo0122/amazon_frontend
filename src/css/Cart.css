@@ -1,0 +1,153 @@
+.cart_window{
+    position: relative;
+    height: 100%;
+    background-color: #EAEDED;
+}
+.total{
+    margin-top: 10px;
+    text-align: end;
+    font-size: 20px;
+   font-weight: 500;
+}
+.total-price{
+   
+    color: #ee4d2d;
+}
+.shopping_cart{
+  
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+}
+.popup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 600;
+
+}
+.black-window{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.popup__container{
+    position: absolute;
+    width: 31rem;
+    top: 50%;
+    left: 50%;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 1.25rem;
+    transform: translate(-50%,-50%);
+    overflow: visible;
+    max-height: 100%;
+    max-width: 100%;
+}
+.popup_title{
+    font-size: 1.5rem;
+    color: #ee4d2d;
+    margin-top: 1.875rem;
+}
+.popup_name{
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+}
+.popup_button{
+    display: flex;
+    margin-top: 6.25rem;
+}
+.btn-solid-primary{
+    height: 40px;
+    padding: 0 20px;
+    min-width: 70px;
+    flex: 1;
+    max-width: 100%;
+    cursor: pointer;
+}
+.btn_accept{
+    color: #fff;
+    background: #ee4d2d;
+    text-transform: capitalize;
+}
+.btn_refuse{
+    background: #fff;
+    color: #555;
+    border: 1px solid rgba(0,0,0,.09);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%)
+}
+.btn-spacer{
+    width: 10px;
+    height: 100%;
+}
+.shopping_cart_container{
+    padding: 20px;
+}
+.shopping_cart_container .select-option{
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.shopping_cart_container .select-option a{
+    color: #007185;
+}
+.cart-item{
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.product-control{
+    margin-top: 10px;
+}
+.cart-item img{
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+}
+.Delete-btn{
+    padding: 2px 8px;
+    border: 1px solid #ccc;
+
+    cursor: pointer;
+}
+.number_product{
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+.delete-btn{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 2px;
+    box-shadow: 5px 5px 2px grey;
+}
+.cart-price{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.cart_name_product{
+    font-size: 20px;
+}
+.cart_item_cb{
+    padding: 2px 2px ;
+   
+    
+}
+.cart_item_cb input:hover{
+    outline:1px solid aqua;
+    
+}
+.cart_item_cb input{
+    width: 16px;
+    height: 16px;
+    
+}
+.loading-active{
+    color: #ccc;
+    border-color: rgba(0, 0, 0, 0.09);
+}
+

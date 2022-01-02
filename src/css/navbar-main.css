@@ -1,0 +1,38 @@
+li{
+    list-style: none;
+}
+.navbar-main{
+    background-color: #232f3e;
+    height: 40px;
+}
+.navbar-main .container-wrapper{
+    padding: 0 15px;
+    height: 100%;
+}
+.navbar-main  .main-list{
+    display: flex;
+    height: 100%;
+}
+.navbar-main .main-item{
+    padding: 5px 0;
+}
+.navbar-main .main-item-link{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-main .main-icon{
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png");
+    width: 17px;
+    height: 14px;
+    background-position: -172px -255px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.navbar-main  .main-icon-label{
+    font-weight: 600;
+}
