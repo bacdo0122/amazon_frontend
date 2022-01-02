@@ -2,16 +2,14 @@
 import React, { useEffect, useState } from "react";
 import CartItem from "../components/CartItem";
 import Navbar from "../components/Navbar";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 import MyProductItem from "../components/MyProductItem";
 export default function MyProduct() {
   const [data, setData] = useState([]);
   const [change, setChange] = useState(false);
   useEffect(async () => {
     const user = JSON.parse(localStorage.getItem("username")).username;
-    const getProducts = await axios.get(
-      `http://localhost:5000/product/myProduct/brown`
-    );
+    const getProducts = await axiosApi.get(`/product/myProduct/brown`);
     console.log(getProducts);
     setData(getProducts.data.data);
   }, [change]);

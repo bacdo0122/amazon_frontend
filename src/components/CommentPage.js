@@ -1,13 +1,11 @@
 /* eslint-disable */
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 
 export default function CommentPage({ page, setPage, productID }) {
   const [totalPages, setTotalPages] = useState(null);
   const getComments = async () => {
-    const getComment = await axios.get(
-      `http://localhost:5000/comment/${productID}/AllComment`
-    );
+    const getComment = await axiosApi.get(`/comment/${productID}/AllComment`);
     const getTotal =
       parseInt(getComment.data.length) % 1 == 0
         ? parseInt(getComment.data.length / 1)

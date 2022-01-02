@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { api } from "../api";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 export default function SectionBodyLeft({
   setData,
   setLoading,
@@ -382,9 +382,7 @@ export default function SectionBodyLeft({
           className="btn-Delete"
           onClick={async () => {
             try {
-              const getData = await axios.get(
-                `http://localhost:5000/product?page=1`
-              );
+              const getData = await axiosApi.get(`/product?page=1`);
               const getTotal =
                 parseInt(getData.data.totalPage) % 8 == 0
                   ? parseInt(getData.data.totalPage / 8)

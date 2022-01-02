@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 export default function MyProductItem({
   id,
   brand,
@@ -64,9 +64,7 @@ export default function MyProductItem({
             className="delete-btn"
             style={{ marginRight: "30px" }}
             onClick={async () => {
-              const deleteProduct = await axios.delete(
-                `http://localhost:5000/product/${id}`
-              );
+              const deleteProduct = await axiosApi.delete(`/product/${id}`);
               setChange(!change);
             }}
           >

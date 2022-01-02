@@ -1,9 +1,8 @@
 /* eslint-disable */
 import React, { useEffect, useState, useCallback } from "react";
 import { covertNumberToStar, covertDate } from "./ButtonControl";
-import axios from "axios";
 import ImageAndVideo from "./ImageAndVideo";
-
+import axiosApi from "../apiConfig";
 export default function CommentItem({
   product,
   user,
@@ -38,9 +37,7 @@ export default function CommentItem({
   };
 
   const getLike = useCallback(async () => {
-    const getLikes = await axios.get(
-      `http://localhost:5000/like/${product._id}/${_id}`
-    );
+    const getLikes = await axiosApi.get(`/like/${product._id}/${_id}`);
 
     setLikes(() => getLikes.data);
     const checkUserLike = getLikes.data.filter((item) => {
@@ -61,17 +58,15 @@ export default function CommentItem({
 
   const handleCheck = async () => {
     if (check()) {
-      await axios.delete(`http://localhost:5000/like/${likes[0]._id}`);
+      await axiosApi.delete(`/like/${likes[0]._id}`);
     } else {
-      await axios.post("http://localhost:5000/like", {
+      await axiosApi.post("/like", {
         userID: JSON.parse(localStorage.getItem("username"))._id,
         commentID: _id,
         productID: product._id,
       });
     }
-    const getLikes = await axios.get(
-      `http://localhost:5000/like/${product._id}/${_id}`
-    );
+    const getLikes = await axiosApi.get(`/like/${product._id}/${_id}`);
     setLikes(() => getLikes.data);
   };
   return (

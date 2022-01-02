@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "../css/register.css";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 export default function Register() {
   const history = useNavigate();
   const checkError = (
@@ -80,7 +80,7 @@ export default function Register() {
                     password: password,
                   })
                 );
-                await axios.post("http://localhost:5000/user", {
+                await axiosApi.post("/user", {
                   username: username,
                   password: password,
                   email: email,

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { api } from "../api";
 import Slider from "react-slick";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 function PrevButton({ onClick }) {
   return (
     <span class="slick-prev slick-arrow" onClick={onClick}>
@@ -57,14 +57,14 @@ export default function SectionBodyRight({
   useEffect(() => {
     setTimeout(async () => {
       try {
-        let query = `http://localhost:5000/product?`;
+        let query = `/product?`;
         query += `page=${page}`;
         if (name) query += `&name=${name}`;
         if (star !== 0) query += `&star=${star}`;
         if (color) query += `&color=${color}`;
         if (price) query += `&price=${price}`;
         if (brand) query += `&brand=${brand}`;
-        const getData = await axios.get(query);
+        const getData = await axiosApi.get(query);
         const getTotal =
           parseInt(getData.data.totalPage) % 8 == 0
             ? parseInt(getData.data.totalPage / 8)
@@ -78,9 +78,7 @@ export default function SectionBodyRight({
   }, [page, change, setData, star, color, brand, price, name]);
 
   useEffect(async () => {
-    const getData = await axios.get(
-      `http://localhost:5000/product?page=${page}`
-    );
+    const getData = await axiosApi.get(`/product?page=${page}`);
     const getTotal =
       parseInt(getData.data.totalPage) % 8 == 0
         ? parseInt(getData.data.totalPage / 8)

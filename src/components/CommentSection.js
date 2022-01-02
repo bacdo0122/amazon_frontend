@@ -3,14 +3,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CommentItem from "./CommentItem";
 import CommentPage from "./CommentPage";
-
+import axiosApi from "../apiConfig";
 export default function CommentSection({ productID }) {
   const [comments, setComments] = useState([]);
   const [page, setPage] = useState(1);
   const getComments = async () => {
-    const getComment = await axios.get(
-      `http://localhost:5000/comment/${productID}?page=${page}`
-    );
+    const getComment = await axiosApi.get(`/comment/${productID}?page=${page}`);
 
     setComments(getComment.data);
   };

@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 import { covertNumberToStar, checkPercentStar } from "./ButtonControl";
 export default function ReviewStar({ productID }) {
   const [totals, setGetTotals] = useState({
@@ -16,9 +16,7 @@ export default function ReviewStar({ productID }) {
     oneStars: 0,
   });
   const getComments = async () => {
-    const getComment = await axios.get(
-      `http://localhost:5000/comment/${productID}/AllComment`
-    );
+    const getComment = await axiosApi.get(`/comment/${productID}/AllComment`);
     if (getComment.data.length > 0) {
       const totalStars = getComment.data.reduce((total, item) => {
         return total + item.star.number;

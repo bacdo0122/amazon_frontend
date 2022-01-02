@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from "react";
 import "../css/register.css";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "axios";
+import axiosApi from "../apiConfig";
 export default function Update() {
   const history = useNavigate();
   const [data, setData] = useState({});
   const { id } = useParams();
   useEffect(async () => {
-    const product = await axios.get(`http://localhost:5000/product/${id}`);
+    const product = await axiosApi.get(`/product/${id}`);
     setData(product.data[0]);
   }, []);
   return (
@@ -28,18 +28,15 @@ export default function Update() {
               const content = document.querySelector("#content").value;
               const time = document.querySelector("#Time").value;
               const color = document.querySelector("#Color").value;
-              const update = await axios.patch(
-                `http://localhost:5000/product/${id}`,
-                {
-                  name,
-                  dolar,
-                  cent,
-                  brand,
-                  content,
-                  time,
-                  color,
-                }
-              );
+              const update = await axiosApi.patch(`/product/${id}`, {
+                name,
+                dolar,
+                cent,
+                brand,
+                content,
+                time,
+                color,
+              });
               history("/my_products", { replace: true });
             }}
           >

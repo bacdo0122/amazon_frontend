@@ -2,7 +2,7 @@
 import React from "react";
 import "../css/login.css";
 import { useNavigate } from "react-router-dom";
-import axios from "../apiConfig";
+import axiosApi from "../apiConfig";
 
 export default function Login() {
   const history = useNavigate();
@@ -22,8 +22,8 @@ export default function Login() {
             e.preventDefault();
             const username = document.querySelector("#username").value;
             const password = document.querySelector("#password").value;
-            const res = await axios.get(
-              `user?username=${username}&password=${password}`
+            const res = await axiosApi.get(
+              `/user?username=${username}&password=${password}`
             );
 
             if (res.data.message) {
